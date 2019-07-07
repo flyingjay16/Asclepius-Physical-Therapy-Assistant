@@ -67,7 +67,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.camera);
         Log.d(TAG, "onCreate: called");
 
         tracker = findViewById(R.id.tracker);
