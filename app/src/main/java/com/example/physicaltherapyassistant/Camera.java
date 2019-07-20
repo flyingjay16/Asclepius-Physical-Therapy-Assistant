@@ -15,6 +15,9 @@ import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
+import org.opencv.core.MatOfPoint2f;
+import org.opencv.core.Rect;
+import org.opencv.core.RotatedRect;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
@@ -31,8 +34,8 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private Mat mat1;
     private Mat mat2;
 
-    private Scalar lScalar = new Scalar(100,112,50);  //100,112,50        112,131,15
-    private Scalar uScalar = new Scalar(180,255,255); //180,255,255       180,255,255
+    public static Scalar lScalar = new Scalar(100,112,50);  //100,112,50        112,131,15
+    public static Scalar uScalar = new Scalar(180,255,255); //180,255,255       180,255,255
 
     private Mat hsvMatI;
     private Mat hsvMatO;
@@ -74,6 +77,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         tracker.setVisibility(SurfaceView.VISIBLE);
         tracker.setCameraIndex(0);
         tracker.setCvCameraViewListener(this);
+
 
         View decorView = getWindow().getDecorView();
         // Hide the status bar.
@@ -141,7 +145,6 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         mBlurMat.release();
 
         hierarchy.release();
-
     }
 
     @Override
@@ -160,12 +163,31 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         List<MatOfPoint> contourList = new ArrayList<MatOfPoint>();
 
         Imgproc.findContours(mBlurMat, contourList, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE);
+        hierarchy.release();
 
         for(int i = 0 ; i < contourList.size(); i++) {
-            hierarchy.release();
-            Imgproc.drawContours(inputFrame, contourList, i,  new Scalar(255,0,0), 2);
-            //contour gets smaller when bent
-            //could change b/c of body type???
+            /*hierarchy.release();
+            Imgproc.drawContours(inputFrame, contourList, i,  new Scalar(255,0,0), 2);*/
+
+            /*MatOfPoint2f temp = new MatOfPoint2f(contourList.get(i).toArray());
+            RotatedRect rect = Imgproc.minAreaRect(temp);
+
+            Mat box = new Mat();
+
+
+            Imgproc.boxPoints(rect, box);
+
+
+            List<MatOfPoint> boxList = new ArrayList<MatOfPoint>();
+            boxList.add(box);
+
+            Imgproc.drawContours(inputFrame, boxList, i, new Scalar(255,0,0), 2);*/
+
+            double area = Imgproc.contourArea(contourList.get(i));
+            if(area > 1000) {
+                Rect rect = Imgproc.boundingRect(contourList.get(i));
+                Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 2);
+            }
         }
 
         return inputFrame;

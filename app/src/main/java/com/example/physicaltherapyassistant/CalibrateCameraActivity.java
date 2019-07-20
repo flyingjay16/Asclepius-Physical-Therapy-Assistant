@@ -3,24 +3,34 @@ package com.example.physicaltherapyassistant;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
+import org.florescu.android.rangeseekbar.RangeSeekBar;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
+import org.opencv.android.LoaderCallbackInterface;
+import org.opencv.android.OpenCVLoader;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
 public class CalibrateCameraActivity extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
 
+    private static final String TAG = "CalibrateCameraActivity";
+
+    public static Scalar lScalar;
+    public static Scalar uScalar;
+
     private Button saveButton;
-    private SeekBar hueSeekBar;
-    private SeekBar satSeekBar;
-    private SeekBar valSeekBar;
+    private RangeSeekBar<Integer> hueSeekBar;
+    private RangeSeekBar<Integer> satSeekBar;
+    private RangeSeekBar<Integer> valSeekBar;
 
     private CameraBridgeViewBase calibrator;
 
@@ -63,10 +73,15 @@ public class CalibrateCameraActivity extends AppCompatActivity implements Camera
         satSeekBar = findViewById(R.id.saturation_seekBar);
         valSeekBar = findViewById(R.id.value_seekBar);
 
+        hueSeekBar.setRangeValues(0, 180);
+        satSeekBar.setRangeValues(0, 255);
+        valSeekBar.setRangeValues(0, 255);
+
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Camera.lScalar = lScalar;
+                Camera.uScalar = uScalar;
             }
         });
 
@@ -80,8 +95,12 @@ public class CalibrateCameraActivity extends AppCompatActivity implements Camera
     protected void onResume() {
         super.onResume();
 
-        if(calibrator != null) {
-            calibrator.enableView();
+        if (!OpenCVLoader.initDebug()) {
+            Log.d(TAG, "Internal OpenCV library not found. Using OpenCV Manager for initialization");
+            OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_3_0_0, this, mLoaderCallback);
+        } else {
+            Log.d(TAG, "OpenCV library found inside package. Using it!");
+            mLoaderCallback.onManagerConnected(LoaderCallbackInterface.SUCCESS);
         }
     }
 
@@ -129,6 +148,12 @@ public class CalibrateCameraActivity extends AppCompatActivity implements Camera
         Imgproc.resize(mat1, mat2, inputFrame.size(), 0, 0, 0);
         Core.flip(mat2, inputFrame, 1);
 
-        return inputFrame;
+        lScalar = new Scalar(hueSeekBar.getSelectedMinValue(), satSeekBar.getSelectedMinValue(), valSeekBar.getSelectedMinValue());
+        uScalar = new Scalar(hueSeekBar.getSelectedMaxValue(), satSeekBar.getSelectedMaxValue(), valSeekBar.getSelectedMaxValue());
+
+        Imgproc.cvtColor(inputFrame, hsvMatI, Imgproc.COLOR_RGB2HSV_FULL);
+        Core.inRange(hsvMatI, lScalar, uScalar, hsvMatO);
+
+        return hsvMatO;
     }
 }
