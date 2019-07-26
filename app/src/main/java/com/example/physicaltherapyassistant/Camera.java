@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
 
@@ -43,6 +44,11 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private Mat mBlurMat;
 
     private Mat hierarchy;
+
+    private int centerX;
+    private int centerY;
+
+    private ArrayList<Integer> yRange;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -192,4 +198,61 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
         return inputFrame;
     }
+
+    private Mat detectFacePulls(CameraBridgeViewBase.CvCameraViewFrame input) {
+        inputFrame = input.rgba();
+
+        Core.transpose(inputFrame, mat1);
+        Imgproc.resize(mat1, mat2, inputFrame.size(), 0, 0, 0);
+        Core.flip(mat2, inputFrame, 1);
+
+        Imgproc.cvtColor(inputFrame, hsvMatI, Imgproc.COLOR_RGB2HSV_FULL);
+        Core.inRange(hsvMatI, lScalar, uScalar, hsvMatO);
+
+        Imgproc.medianBlur(hsvMatO, mBlurMat, 35); //45,55
+
+        List<MatOfPoint> contourList = new ArrayList<MatOfPoint>();
+
+        Imgproc.findContours(mBlurMat, contourList, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE);
+        hierarchy.release();
+
+        tracker.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                ArrayList<Integer> tempYRange = new ArrayList<Integer>();
+                tempYRange.add(centerY - 50);
+                tempYRange.add(centerY + 50);
+
+                yRange = tempYRange;
+
+                Log.d(TAG, "yRange: " + yRange.toString());
+
+                return false;
+            }
+        });
+
+        for(int i = 0 ; i < contourList.size(); i++) {
+
+            double area = Imgproc.contourArea(contourList.get(i));
+            if(area > 4000) {
+                Rect rect = Imgproc.boundingRect(contourList.get(i));
+                centerX = rect.y;
+                centerY = rect.y;
+
+                Log.d(TAG, "centerX: " + centerX);
+                Log.d(TAG, "centerY: " + centerY);
+
+                if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0,255,0), 4);
+                }
+                else {
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                }
+            }
+        }
+
+        return inputFrame;
+    }
+
+
 }

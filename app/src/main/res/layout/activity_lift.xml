@@ -36,4 +36,15 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="150dp"/>
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This feature lets you know if you are doing the exercise at an appropriate speed. You want to aim for a consistent green color. "
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="303dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop = "250dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
