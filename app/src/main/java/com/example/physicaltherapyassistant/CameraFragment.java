@@ -16,6 +16,8 @@ import androidx.fragment.app.Fragment;
 
 public class CameraFragment extends Fragment {
 
+    public static final String TAG = "CameraFragment";
+
     Button facePullButton;
     Button lowerTrapsButton;
     Button rotatorCuffsButton;
@@ -32,6 +34,7 @@ public class CameraFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Camera.class);
+                    intent.putExtra(TAG, "face_pull");
                     startActivity(intent);
                 }
             });
@@ -42,6 +45,7 @@ public class CameraFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Camera.class);
+                    intent.putExtra(TAG, "lower_traps");
                     startActivity(intent);
                 }
             });
@@ -51,6 +55,7 @@ public class CameraFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Camera.class);
+                    intent.putExtra(TAG, "rotator_cuffs");
                     startActivity(intent);
                 }
             });
@@ -60,6 +65,7 @@ public class CameraFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Camera.class);
+                    intent.putExtra(TAG, "swimmers");
                     startActivity(intent);
                 }
             });
