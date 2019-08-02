@@ -18,5 +18,10 @@
         android:icon = "@drawable/ic_accessibility_black_24dp"
         android:title = "Tracker"/>
 
+    <item
+        android:id = "@+id/tutorials"
+        android:icon = "@drawable/ic_video_library_black_24dp"
+        android:title = "Tutorials"/>
+
 
 </menu>

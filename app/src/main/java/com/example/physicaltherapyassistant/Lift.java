@@ -32,7 +32,7 @@ public class Lift extends AppCompatActivity {
                 xText.setText("Delta X: " + tx);
                 yText.setText("Delta Y: " + ty);
                 zText.setText("Delta Z: " + tz);
-                if(ty > -0.4 && ty < 0.4) {
+                if(ty > -0.5 && ty < 0.6) {
                     getWindow().getDecorView().setBackgroundColor(Color.GREEN);
                 }
                 else {

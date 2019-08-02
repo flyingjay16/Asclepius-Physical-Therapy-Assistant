@@ -46,7 +46,10 @@ public class MainActivity extends AppCompatActivity {
                         selectedFrag = new CameraFragment();
                         break;
                     case R.id.accel:
-                        selectedFrag = new LiftFragment();
+                        selectedFrag = new TrackerFragment();
+                        break;
+                    case R.id.tutorials:
+                        selectedFrag = new TutorialFragment();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, selectedFrag).commit();

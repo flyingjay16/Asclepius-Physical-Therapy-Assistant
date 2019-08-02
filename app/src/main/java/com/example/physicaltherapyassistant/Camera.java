@@ -155,48 +155,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
     @Override
     public Mat onCameraFrame(CameraBridgeViewBase.CvCameraViewFrame input) {
-        inputFrame = input.rgba();
-
-        Core.transpose(inputFrame, mat1);
-        Imgproc.resize(mat1, mat2, inputFrame.size(), 0, 0, 0);
-        Core.flip(mat2, inputFrame, 1);
-
-        Imgproc.cvtColor(inputFrame, hsvMatI, Imgproc.COLOR_RGB2HSV_FULL);
-        Core.inRange(hsvMatI, lScalar, uScalar, hsvMatO);
-
-        Imgproc.medianBlur(hsvMatO, mBlurMat, 35); //45,55
-
-        List<MatOfPoint> contourList = new ArrayList<MatOfPoint>();
-
-        Imgproc.findContours(mBlurMat, contourList, hierarchy, Imgproc.RETR_LIST, Imgproc.CHAIN_APPROX_SIMPLE);
-        hierarchy.release();
-
-        for(int i = 0 ; i < contourList.size(); i++) {
-            /*hierarchy.release();
-            Imgproc.drawContours(inputFrame, contourList, i,  new Scalar(255,0,0), 2);*/
-
-            /*MatOfPoint2f temp = new MatOfPoint2f(contourList.get(i).toArray());
-            RotatedRect rect = Imgproc.minAreaRect(temp);
-
-            Mat box = new Mat();
-
-
-            Imgproc.boxPoints(rect, box);
-
-
-            List<MatOfPoint> boxList = new ArrayList<MatOfPoint>();
-            boxList.add(box);
-
-            Imgproc.drawContours(inputFrame, boxList, i, new Scalar(255,0,0), 2);*/
-
-            double area = Imgproc.contourArea(contourList.get(i));
-            if(area > 1000) {
-                Rect rect = Imgproc.boundingRect(contourList.get(i));
-                Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 2);
-            }
-        }
-
-        return inputFrame;
+        return detectFacePulls(input);
     }
 
     private Mat detectFacePulls(CameraBridgeViewBase.CvCameraViewFrame input) {

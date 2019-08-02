@@ -14,9 +14,32 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id = "@+id/skull_crushers"
-        android:text = "Skull Crushers"
-        android:layout_marginTop = "150dp"
+        android:id = "@+id/accel_face_pulls"
+        android:text = "Face Pulls"
+        android:layout_marginTop = "120dp"
         android:layout_marginLeft = "30dp"/>
 
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id = "@+id/accel_lower_traps"
+        android:text="Lower Traps"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="225dp"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id = "@+id/accel_rotator_cuff"
+        android:text = "Rotator Cuff"
+        android:layout_marginTop = "300dp"
+        android:layout_marginLeft = "30dp"/>
+
+    <Button
+        android:id="@+id/accel_swimmers"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="300dp"
+        android:text="Swimmers" />
 </RelativeLayout>
