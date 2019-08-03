@@ -1,6 +1,10 @@
 package com.example.physicaltherapyassistant;
 
+import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -9,14 +13,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 public class CameraFragment extends Fragment {
 
     private static final String TAG = "CameraFragment";
+    private int CAMERA_PERMISSION_CODE = 1;
 
     Button facePullButton;
     Button lowerTrapsButton;
@@ -28,6 +37,14 @@ public class CameraFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             view = inflater.inflate(R.layout.camera_fragment, container, false);
+
+            if(ContextCompat.checkSelfPermission(getContext(),
+                    Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+                //Toast.makeText(getContext(), "You have already granted this permission!", Toast.LENGTH_SHORT).show();
+            } else {
+                requestCameraPermission();
+            }
+
             facePullButton = view.findViewById(R.id.cam_face_pulls);
 
             facePullButton.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +91,42 @@ public class CameraFragment extends Fragment {
 
 
             return view;
+    }
+
+    private void requestCameraPermission() {
+        if(ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), Manifest.permission.CAMERA)) {
+
+            new AlertDialog.Builder(getContext())
+                    .setTitle("Permission needed")
+                    .setMessage("Camera permission is needed to track objects")
+                    .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            ActivityCompat.requestPermissions(getActivity(), new String[] {Manifest.permission.CAMERA}, CAMERA_PERMISSION_CODE);
+
+                        }
+                    })
+                    .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.dismiss();
+                        }
+                    })
+                    .create().show();
+        } else {
+            ActivityCompat.requestPermissions(getActivity(), new String[] {Manifest.permission.CAMERA}, CAMERA_PERMISSION_CODE);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == CAMERA_PERMISSION_CODE) {
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(getContext(), "Permission Granted", Toast.LENGTH_SHORT);
+            } else {
+                Toast.makeText(getContext(), "Permission Denied", Toast.LENGTH_SHORT);
+            }
+        }
     }
 
     @Override
