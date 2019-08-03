@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 
 public class CameraFragment extends Fragment {
 
-    public static final String TAG = "CameraFragment";
+    private static final String TAG = "CameraFragment";
 
     Button facePullButton;
     Button lowerTrapsButton;

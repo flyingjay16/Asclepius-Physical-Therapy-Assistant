@@ -95,7 +95,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         decorView.setSystemUiVisibility(uiOptions);
 
         Intent intent = getIntent();
-        algorythm = intent.getStringExtra(CameraFragment.TAG);
+        algorythm = intent.getStringExtra("CameraFragment");
 
     }
 

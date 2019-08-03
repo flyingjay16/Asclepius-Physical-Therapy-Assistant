@@ -13,12 +13,12 @@ import androidx.fragment.app.Fragment;
 
 public class TrackerFragment extends Fragment {
 
+    private static final String TAG = "TrackerFragment";
+
     Button face_pullsButton;
     Button lower_trapsButton;
     Button swimmersButton;
     Button rotator_cuffButton;
-
-
 
     @Nullable
     @Override
@@ -30,7 +30,7 @@ public class TrackerFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Lift.class);
-
+                    intent.putExtra(TAG, "face_pulls");
                     startActivity(intent);
                 }
             });
@@ -40,6 +40,7 @@ public class TrackerFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Lift.class);
+                    intent.putExtra(TAG, "lower_traps");
                     startActivity(intent);
                 }
             });
@@ -49,6 +50,7 @@ public class TrackerFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Lift.class);
+                    intent.putExtra(TAG, "swimmers");
                     startActivity(intent);
                 }
             });
@@ -58,6 +60,7 @@ public class TrackerFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(view.getContext(), Lift.class);
+                    intent.putExtra(TAG, "rotator_cuff");
                     startActivity(intent);
                 }
             });
