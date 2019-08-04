@@ -12,35 +12,49 @@
         android:layout_marginStart = "20dp"/>
 
     <Button
+        android:id="@+id/cam_face_pulls"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id = "@+id/cam_face_pulls"
-        android:text = "Face Pulls"
-        android:layout_marginTop = "120dp"
-        android:layout_marginLeft = "30dp"/>
+        android:layout_below="@+id/summary_heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Face Pulls" />
 
     <Button
+        android:id="@+id/cam_lower_traps"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id = "@+id/cam_lower_traps"
-        android:text="Lower Traps"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="225dp"/>
+        android:layout_below="@+id/summary_heading"
+        android:layout_alignParentEnd="true"
+        android:layout_toLeftOf="@+id/cam_face_pulls"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="36dp"
+        android:text="Lower Traps" />
 
     <Button
+        android:id="@+id/cam_rotator_cuff"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id = "@+id/cam_rotator_cuff"
-        android:text = "Rotator Cuff"
-        android:layout_marginTop = "300dp"
-        android:layout_marginLeft = "30dp"/>
+        android:layout_below="@+id/cam_face_pulls"
+        android:layout_alignParentStart= "true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:text="Rotator Cuff" />
 
     <Button
         android:id="@+id/cam_swimmers"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginLeft="225dp"
-        android:layout_marginTop="300dp"
+        android:layout_below="@+id/cam_lower_traps"
+        android:layout_toLeftOf="@+id/cam_rotator_cuff"
+        android:layout_alignParentEnd = "true"
+        android:layout_marginEnd = "36dp"
+        android:layout_marginTop="30dp"
         android:text="Swimmers" />
+
+
 
 </RelativeLayout>
