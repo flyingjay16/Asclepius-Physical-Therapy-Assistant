@@ -29,8 +29,8 @@ public class TrackerFragment extends Fragment {
             face_pullsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), Lift.class);
-                    intent.putExtra(TAG, "face_pulls");
+                    Intent intent = new Intent(view.getContext(), TrackerActivity.class);
+                    intent.putExtra(TAG, "Face Pulls");
                     startActivity(intent);
                 }
             });
@@ -39,8 +39,8 @@ public class TrackerFragment extends Fragment {
             lower_trapsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), Lift.class);
-                    intent.putExtra(TAG, "lower_traps");
+                    Intent intent = new Intent(view.getContext(), TrackerActivity.class);
+                    intent.putExtra(TAG, "Lower Traps");
                     startActivity(intent);
                 }
             });
@@ -49,8 +49,8 @@ public class TrackerFragment extends Fragment {
             swimmersButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), Lift.class);
-                    intent.putExtra(TAG, "swimmers");
+                    Intent intent = new Intent(view.getContext(), TrackerActivity.class);
+                    intent.putExtra(TAG, "Swimmers");
                     startActivity(intent);
                 }
             });
@@ -59,8 +59,8 @@ public class TrackerFragment extends Fragment {
             rotator_cuffButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), Lift.class);
-                    intent.putExtra(TAG, "rotator_cuff");
+                    Intent intent = new Intent(view.getContext(), TrackerActivity.class);
+                    intent.putExtra(TAG, "Rotator Cuffs");
                     startActivity(intent);
                 }
             });

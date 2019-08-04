@@ -25,8 +25,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".TrackerActivity"></activity>
-        <activity android:name=".activitiy_tutorial" />
-        <activity android:name=".Tutorial" />
         <activity android:name=".CalibrateCameraActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
