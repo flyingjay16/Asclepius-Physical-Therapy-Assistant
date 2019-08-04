@@ -50,17 +50,17 @@ public class TutorialFragment extends Fragment implements AdapterView.OnItemSele
             videoView.setVideoURI(uri);
             videoView.start();
         } else if(text.equals("Face Pulls")) {
-            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.facePull;
+            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.placeholder;
             Uri uri = Uri.parse(videopath);
             videoView.setVideoURI(uri);
             videoView.start();
         } else if(text.equals("Lower Traps")) {
-            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.lowerTraps;
+            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.lowertraps;
             Uri uri = Uri.parse(videopath);
             videoView.setVideoURI(uri);
             videoView.start();
         } else if(text.equals("Rotator Cuffs")) {
-            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.rotatorCuff;
+            videopath="android.resource://com.example.physicaltherapyassistant" +  "/" + R.raw.rotatorcuff;
             Uri uri = Uri.parse(videopath);
             videoView.setVideoURI(uri);
             videoView.start();
