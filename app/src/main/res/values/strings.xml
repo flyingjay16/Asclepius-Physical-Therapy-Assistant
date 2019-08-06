@@ -30,4 +30,11 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    
+    <string-array name="vidOptions">
+        <item>Face Pulls</item>
+        <item>Lower Traps</item>
+        <item>Rotator Cuffs</item>
+        <item>Swimmers</item>
+    </string-array>
 </resources>
