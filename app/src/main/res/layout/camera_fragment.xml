@@ -57,7 +57,7 @@
         app:layout_constraintLeft_toRightOf="@id/cam_rotator_cuff"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop = "30dp"
-        android:layout_marginStart = "30dp"
+        android:layout_marginStart = "20dp"
         />
 
 
