@@ -13,9 +13,13 @@ public class TrackerActivity extends AppCompatActivity {
     private static final String TAG = "TrackerActivity";
 
     private String exerciseName;
+    private int repNum;
     private TextView exerciseText;
+    private TextView accelNum;
+    private TextView repNumView;
 
     private double acceleration;
+    private float lastAccelNum;
 
     private Accelerometer accelerometer;
 
@@ -29,6 +33,12 @@ public class TrackerActivity extends AppCompatActivity {
         Intent intent = getIntent();
         exerciseName = intent.getStringExtra("TrackerFragment");
         exerciseText = findViewById(R.id.exercise_text);
+        accelNum = findViewById(R.id.accel_num);
+        repNumView = findViewById(R.id.accel_rep_num);
+
+        repNum = 0;
+
+        lastAccelNum = 0;
 
         exerciseText.setText(exerciseName);
 
@@ -54,11 +64,22 @@ public class TrackerActivity extends AppCompatActivity {
 
             @Override
             public void onTranslation(float tx, float ty, float tz) {
-                if(ty > -acceleration && ty < (acceleration + 1)) {
-                    getWindow().getDecorView().setBackgroundColor(Color.GREEN);
-                }
-                else {
-                    getWindow().getDecorView().setBackgroundColor(Color.RED);
+                accelNum.setText(Float.toString(ty));
+                switch(exerciseName) {
+                    case "Face Pulls":
+                        detectFacePulls(ty);
+                        break;
+                    case "Lower Traps":
+                        detectLowerTraps(ty);
+                        break;
+                    case "Swimmers":
+                        detectSwimmers(ty);
+                        break;
+                    case "Rotator Cuffs":
+                        detectRotatorCuffs(ty);
+                        break;
+                    default:
+                        getWindow().getDecorView().setBackgroundColor(Color.WHITE);
                 }
             }
         });
@@ -74,5 +95,48 @@ public class TrackerActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         accelerometer.unRegister();
+    }
+
+    private void detectFacePulls(float ty) {
+        if(ty > -acceleration && ty < (acceleration + 1)) {
+            getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        }
+        else {
+            getWindow().getDecorView().setBackgroundColor(Color.RED);
+        }
+
+        if((lastAccelNum < 0 && ty > 0) || (lastAccelNum > 0 && ty < 0)) {
+            repNum++;
+            repNumView.setText(Integer.toString(repNum));
+        }
+
+        lastAccelNum = ty;
+    }
+
+    private void detectLowerTraps(float ty) {
+        if(ty > -acceleration && ty < (acceleration + 1)) {
+            getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        }
+        else {
+            getWindow().getDecorView().setBackgroundColor(Color.RED);
+        }
+    }
+
+    private void detectRotatorCuffs(float ty) {
+        if(ty > -acceleration && ty < (acceleration + 1)) {
+            getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        }
+        else {
+            getWindow().getDecorView().setBackgroundColor(Color.RED);
+        }
+    }
+
+    private void detectSwimmers(float ty) {
+        if(ty > -acceleration && ty < (acceleration + 1)) {
+            getWindow().getDecorView().setBackgroundColor(Color.GREEN);
+        }
+        else {
+            getWindow().getDecorView().setBackgroundColor(Color.RED);
+        }
     }
 }
