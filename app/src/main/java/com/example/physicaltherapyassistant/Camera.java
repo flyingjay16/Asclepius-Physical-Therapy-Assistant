@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -48,9 +49,16 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
     private int centerX;
     private int centerY;
+    private int lastCenterX;
+    private int lastCenterY;
 
     private ArrayList<Integer> xRange;
     private ArrayList<Integer> yRange;
+
+    private TextView cRepNum;
+    private TextView wRepNum;
+    private boolean isWrongRep;
+    private boolean isHalfRepDone;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -86,7 +94,6 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         tracker.setCameraIndex(0);
         tracker.setCvCameraViewListener(this);
 
-
         View decorView = getWindow().getDecorView();
         // Hide the status bar.
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
@@ -94,6 +101,9 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
         Intent intent = getIntent();
         algorythm = intent.getStringExtra("CameraFragment");
+
+        cRepNum = findViewById(R.id.cam_correct_reps_num);
+        wRepNum = findViewById(R.id.cam_wrong_reps_num);
 
     }
 
@@ -222,6 +232,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                    isWrongRep = true;
                 }
             }
         }
@@ -420,4 +431,28 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         return inputFrame; 
     }
 
+    private void checkFacePullRep() {
+        if(isHalfRepDone) {
+            updateReps();
+            isHalfRepDone = false;
+        }
+        else if(!isHalfRepDone){
+            isHalfRepDone = true;
+        }
+    }
+
+    private void updateReps() {
+        int num;
+        if(isWrongRep) {
+            num = Integer.parseInt(wRepNum.getText().toString());
+            num++;
+            wRepNum.setText(Integer.toString(num));
+            isWrongRep = false;
+        }
+        else {
+            num = Integer.parseInt(cRepNum.getText().toString());
+            num++;
+            cRepNum.setText(Integer.toString(num));
+        }
+    }
 }

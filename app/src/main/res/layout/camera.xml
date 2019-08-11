@@ -6,6 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/cam_correct_reps_text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop = "100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cam_correct_reps_num"
+        android:text = "Correct Repetitions: "
+        android:textSize = "20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/cam_correct_reps_num"
+        app:layout_constraintLeft_toRightOf="@+id/cam_correct_reps_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:text = "0"
+        android:textSize = "20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/cam_wrong_reps_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cam_wrong_reps_num"
+        android:text = "Wrong Repetitions: "
+        android:textSize = "20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/cam_wrong_reps_num"
+        app:layout_constraintLeft_toRightOf="@+id/cam_wrong_reps_text"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        android:text = "0"
+        android:textSize = "20sp"/>
+
     <org.opencv.android.JavaCameraView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
