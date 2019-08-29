@@ -1,5 +1,5 @@
 package com.example.physicaltherapyassistant;
 
-public class RetrieveLog {
+public class RetrieveData {
 
 }

@@ -3,14 +3,12 @@ package com.example.physicaltherapyassistant;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment selectedFrag = null;
                 switch (menuItem.getItemId()) {
                     case R.id.home:
-                        selectedFrag = new HomeFragment();
+                        selectedFrag = homeFrag;
                         break;
                     case R.id.camera:
                         selectedFrag = new CameraFragment();
