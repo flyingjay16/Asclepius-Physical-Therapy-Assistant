@@ -52,6 +52,11 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private ArrayList<Integer> xRange;
     private ArrayList<Integer> yRange;
 
+    public static ArrayList<Integer> xTrackerList;
+    public static ArrayList<Integer> yTrackerList;
+
+    private boolean isLeft;
+
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
         public void onManagerConnected(int status) {
@@ -207,12 +212,14 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         });
 
         for(int i = 0 ; i < contourList.size(); i++) {
-
             double area = Imgproc.contourArea(contourList.get(i));
             if(area > 4000) {
                 Rect rect = Imgproc.boundingRect(contourList.get(i));
                 centerX = rect.x;
                 centerY = rect.y;
+
+                xTrackerList.add(centerX);
+                yTrackerList.add(centerY);
 
                 Log.d(TAG, "centerX: " + centerX);
                 Log.d(TAG, "centerY: " + centerY);
@@ -418,6 +425,12 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         }
 
         return inputFrame; 
+    }
+
+    private void getDirection() {
+        for(int i = 1; i < xTrackerList.size(); i++) {
+
+        }
     }
 
 }
