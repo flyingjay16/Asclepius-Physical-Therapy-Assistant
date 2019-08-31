@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -56,6 +57,11 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     public static ArrayList<Integer> yTrackerList;
 
     private boolean isLeft;
+    private boolean isWrongRep;
+    private String direction;
+
+    private TextView correctRepNum;
+    private TextView totalRepNum;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -99,6 +105,11 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
         Intent intent = getIntent();
         algorythm = intent.getStringExtra("CameraFragment");
+
+        correctRepNum = findViewById(R.id.correct_reps_num);
+        totalRepNum = findViewById(R.id.total_reps_num);
+
+        isWrongRep = false;
 
     }
 
@@ -229,6 +240,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                    isWrongRep = true;
                 }
             }
         }
@@ -427,7 +439,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         return inputFrame; 
     }
 
-    private void getDirection() {
+    private String getDirection() {
         int posCount = 0;
         int negCount = 0;
 
@@ -441,20 +453,39 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
             if(posCount > negCount) {
                 isLeft = true;
+                direction = "left";
+
             }
             else {
                 isLeft = false;
+                direction = "right";
             }
         }
+
+        return direction;
     }
 
     private void checkForReps() {
-        if(isLeft) {
-            getDirection();
-            //change getDirection to return a direction
-        }
-        else {
-            
+        if(!isWrongRep) {
+            if(isLeft && getDirection().equals("left")) {
+                int num = Integer.parseInt(correctRepNum.getText().toString());
+                num++;
+                correctRepNum.setText(Integer.toString(num));
+
+                num = Integer.parseInt(totalRepNum.getText().toString());
+                num++;
+                totalRepNum.setText(Integer.toString(num));
+            }
+            else if(!isLeft && getDirection().equals("right")){
+                int num = Integer.parseInt(correctRepNum.getText().toString());
+                num++;
+                correctRepNum.setText(Integer.toString(num));
+
+                num = Integer.parseInt(totalRepNum.getText().toString());
+                num++;
+                totalRepNum.setText(Integer.toString(num));
+            }
+            isWrongRep = false;
         }
     }
 
