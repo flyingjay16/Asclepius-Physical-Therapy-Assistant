@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id = "@+id/home"
+        android:icon = "@drawable/ic_home_black_24dp"
+        android:title = "Home"/>
+
+    <item
+        android:id = "@+id/camera"
+        android:icon = "@drawable/ic_menu_camera"
+        android:title = "Camera"/>
+
+    <item
+        android:id = "@+id/accel"
+        android:icon = "@drawable/ic_accessibility_black_24dp"
+        android:title = "Tracker"/>
+
+    <item
+        android:id = "@+id/tutorials"
+        android:icon = "@drawable/ic_video_library_black_24dp"
+        android:title = "Tutorials"/>
+
+
+</menu>

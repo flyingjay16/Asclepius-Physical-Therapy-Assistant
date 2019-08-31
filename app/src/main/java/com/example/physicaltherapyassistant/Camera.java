@@ -428,8 +428,33 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     }
 
     private void getDirection() {
-        for(int i = 1; i < xTrackerList.size(); i++) {
+        int posCount = 0;
+        int negCount = 0;
 
+        for(int i = 1; i < xTrackerList.size(); i++) {
+            if(xTrackerList.get(i) - xTrackerList.get(i-1) > 0) {
+                posCount += 1;
+            }
+            else {
+                negCount += 1;
+            }
+
+            if(posCount > negCount) {
+                isLeft = true;
+            }
+            else {
+                isLeft = false;
+            }
+        }
+    }
+
+    private void checkForReps() {
+        if(isLeft) {
+            getDirection();
+            //change getDirection to return a direction
+        }
+        else {
+            
         }
     }
 
