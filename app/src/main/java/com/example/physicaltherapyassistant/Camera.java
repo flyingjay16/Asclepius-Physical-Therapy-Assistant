@@ -1,6 +1,7 @@
 package com.example.physicaltherapyassistant;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -22,6 +23,7 @@ import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,15 +55,18 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private ArrayList<Integer> xRange;
     private ArrayList<Integer> yRange;
 
-    public static ArrayList<Integer> xTrackerList;
-    public static ArrayList<Integer> yTrackerList;
+    public static ArrayList<Integer> xRepRange;
+    public static ArrayList<Integer> yRepRange;
 
     private boolean isLeft;
-    private boolean isWrongRep;
+    private int markerX;
+    private Boolean isWrongRep;
     private String direction;
 
     private TextView correctRepNum;
     private TextView totalRepNum;
+    private int correctReps;
+    private int totalReps;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -109,7 +114,12 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         correctRepNum = findViewById(R.id.correct_reps_num);
         totalRepNum = findViewById(R.id.total_reps_num);
 
-        isWrongRep = false;
+        correctRepNum.setTextColor(Color.WHITE);
+        totalRepNum.setTextColor(Color.WHITE);
+        correctReps = 0;
+        totalReps = 0;
+
+        isWrongRep = null;
 
     }
 
@@ -210,13 +220,24 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         tracker.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+                ArrayList<Integer> tempXRange = new ArrayList<>();
                 ArrayList<Integer> tempYRange = new ArrayList<Integer>();
                 tempYRange.add(centerY - 50);
                 tempYRange.add(centerY + 50);
 
                 yRange = tempYRange;
+                tempYRange = new ArrayList<Integer>();
 
-                Log.d(TAG, "yRange: " + yRange.toString());
+                tempXRange.add(centerX - 20);
+                tempXRange.add(centerX + 20);
+
+                xRepRange = tempXRange;
+
+                tempYRange.add(centerY - 20);
+                tempYRange.add(centerY + 20);
+                yRepRange = tempYRange;
+
+                isWrongRep = false;
 
                 return false;
             }
@@ -229,18 +250,40 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 centerX = rect.x;
                 centerY = rect.y;
 
-                xTrackerList.add(centerX);
-                yTrackerList.add(centerY);
-
                 Log.d(TAG, "centerX: " + centerX);
                 Log.d(TAG, "centerY: " + centerY);
 
-                if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
+                if(isWrongRep == null){
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0, 0, 255), 4);
+                }
+                else if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0,255,0), 4);
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
                     isWrongRep = true;
+                }
+
+                if(xRepRange != null && (centerX >= xRepRange.get(0) && centerX <= xRepRange.get(1))) {
+                    Log.d(TAG, " isWrongRep: " + isWrongRep);
+                    if(yRepRange != null && (centerY >=  yRepRange.get(0) && centerY <= yRepRange.get(1)) && !isWrongRep) {
+                        correctReps += 1;
+                        Log.d(TAG, "Correct num: " + correctReps);
+                        //correctRepNum.setText("correct");
+
+                        totalReps += 1;
+                        Log.d(TAG, "Total num: " + totalReps);
+                        //totalRepNum.setText("correct");
+                    }
+                    else {
+                        totalReps += 1;
+                        //totalRepNum.setText("wrong");
+                        Log.d(TAG, "Total num: " + totalReps);
+                        isWrongRep = false;
+                    }
+
+                }
+                else {
                 }
             }
         }
@@ -439,7 +482,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         return inputFrame; 
     }
 
-    private String getDirection() {
+    /*private String getDirection() {
         int posCount = 0;
         int negCount = 0;
 
@@ -487,6 +530,8 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
             }
             isWrongRep = false;
         }
-    }
+    }*/
+
+
 
 }
