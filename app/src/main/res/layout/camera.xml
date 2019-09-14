@@ -12,5 +12,44 @@
         android:id="@+id/tracker"
         app:show_fps="false"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/correct_reps_text"
+        android:text = "Correct Reps:"
+        android:textSize = "36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/correct_reps_num"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/correct_reps_num"
+        android:text = "0"
+        android:textSize = "36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/correct_reps_text"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/total_reps_text"
+        android:text = "Total Reps:"
+        android:textSize = "36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/correct_reps_num"
+        app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/total_reps_num"
+        android:text = "0"
+        android:textSize = "36sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/correct_reps_text"
+        app:layout_constraintBottom_toBottomOf="parent"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

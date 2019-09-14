@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -22,6 +24,14 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import static android.content.ContentValues.TAG;
+
 public class CameraFragment extends Fragment {
 
     private static final String TAG = "CameraFragment";
@@ -33,6 +43,14 @@ public class CameraFragment extends Fragment {
     Button swimmersButton;
     View view;
 
+    String androidId;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+
+    Button test;
+    String date = java.time.LocalDate.now().toString();
+    RepLog log = new RepLog(0, 0, 0, 0);
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -40,7 +58,6 @@ public class CameraFragment extends Fragment {
 
             if(ContextCompat.checkSelfPermission(getContext(),
                     Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-                //Toast.makeText(getContext(), "You have already granted this permission!", Toast.LENGTH_SHORT).show();
             } else {
                 requestCameraPermission();
             }
@@ -89,6 +106,29 @@ public class CameraFragment extends Fragment {
 
             setHasOptionsMenu(true);
 
+            androidId = Settings.Secure.getString(getContext().getContentResolver(), Settings.Secure.ANDROID_ID);
+            database = FirebaseDatabase.getInstance();
+            myRef = database.getReference(androidId);
+
+            test = view.findViewById(R.id.submitReps);
+            test.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    // Read from the database
+                    myRef.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            myRef.child(date).child(log.getTimeDate()).setValue(log);
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError error) {
+                            // Failed to read value
+                            Log.w(TAG, "Failed to read value.", error.toException());
+                        }
+                    });
+                }
+            });
 
             return view;
     }
