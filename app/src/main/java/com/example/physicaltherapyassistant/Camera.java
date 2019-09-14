@@ -31,7 +31,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
     public String algorythm;
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "Camera";
 
     private CameraBridgeViewBase tracker;
 
@@ -63,10 +63,15 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private Boolean isWrongRep;
     private String direction;
 
+    private TextView correctRepText;
+    private TextView totalRepText;
     private TextView correctRepNum;
     private TextView totalRepNum;
     private int correctReps;
     private int totalReps;
+
+    private long t1;
+    private long t2;
 
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
@@ -111,15 +116,22 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         Intent intent = getIntent();
         algorythm = intent.getStringExtra("CameraFragment");
 
+        correctRepText = findViewById(R.id.correct_reps_text);
+        totalRepText = findViewById(R.id.total_reps_text);
         correctRepNum = findViewById(R.id.correct_reps_num);
         totalRepNum = findViewById(R.id.total_reps_num);
 
+        correctRepText.setTextColor(Color.WHITE);
+        totalRepText.setTextColor(Color.WHITE);
         correctRepNum.setTextColor(Color.WHITE);
         totalRepNum.setTextColor(Color.WHITE);
         correctReps = 0;
         totalReps = 0;
 
         isWrongRep = null;
+
+        t1 = 0;
+        t2 = 0;
 
     }
 
@@ -266,25 +278,9 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
                 if(xRepRange != null && (centerX >= xRepRange.get(0) && centerX <= xRepRange.get(1))) {
                     Log.d(TAG, " isWrongRep: " + isWrongRep);
-                    if(yRepRange != null && (centerY >=  yRepRange.get(0) && centerY <= yRepRange.get(1)) && !isWrongRep) {
-                        correctReps += 1;
-                        Log.d(TAG, "Correct num: " + correctReps);
-                        //correctRepNum.setText("correct");
-
-                        totalReps += 1;
-                        Log.d(TAG, "Total num: " + totalReps);
-                        //totalRepNum.setText("correct");
-                    }
-                    else {
-                        totalReps += 1;
-                        //totalRepNum.setText("wrong");
-                        Log.d(TAG, "Total num: " + totalReps);
-                        isWrongRep = false;
-                    }
-
+                    updateReps(2000);
                 }
-                else {
-                }
+
             }
         }
 
@@ -311,13 +307,26 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         tracker.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+                ArrayList<Integer> tempXRange = new ArrayList<Integer>();
                 ArrayList<Integer> tempYRange = new ArrayList<Integer>();
                 tempYRange.add(centerY - 50);
                 tempYRange.add(centerY + 50);
 
                 yRange = tempYRange;
+                tempYRange = new ArrayList<Integer>();
 
-                Log.d(TAG, "yRange: " + yRange.toString());
+
+                tempXRange.add(centerX - 20);
+                tempXRange.add(centerX + 20);
+
+                xRepRange = tempXRange;
+
+                tempYRange.add(centerY - 20);
+                tempYRange.add(centerY + 20);
+
+                yRepRange = tempYRange;
+
+                isWrongRep = false;
 
                 return false;
             }
@@ -334,11 +343,19 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 Log.d(TAG, "centerX: " + centerX);
                 Log.d(TAG, "centerY: " + centerY);
 
-                if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
+                if(isWrongRep == null) {
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0, 0, 255), 4);
+                }
+                else if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0,255,0), 4);
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                    isWrongRep = true;
+                }
+
+                if(xRepRange != null && (centerX >= xRepRange.get(0) && centerX <= xRepRange.get(1))) {
+                    updateReps(2000);
                 }
             }
         }
@@ -378,7 +395,18 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
                 yRange = tempYRange;
 
-                Log.d(TAG, "yRange: " + yRange.toString());
+                tempXRange = new ArrayList<Integer>();
+                tempYRange = new ArrayList<Integer>();
+
+                tempXRange.add(centerX - 10);
+                tempXRange.add(centerX + 10);
+                xRepRange = tempXRange;
+
+                tempYRange.add(centerY - 10);
+                tempYRange.add(centerY + 10);
+                yRepRange = tempYRange;
+
+                isWrongRep = false;
 
                 return false;
             }
@@ -397,7 +425,10 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 Log.d(TAG, "centerY: " + centerY);
 
 
-                if(xRange != null && (centerX >= xRange.get(0) && centerX <= xRange.get(1))) {
+                if(isWrongRep == null) {
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0, 0, 255), 4);
+                }
+                else if(xRange != null && (centerX >= xRange.get(0) && centerX <= xRange.get(1))) {
                     if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
                         Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0,255,0), 4);
                     }
@@ -407,6 +438,12 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                    isWrongRep = true;
+                }
+
+                if(xRepRange != null && (centerX >= xRepRange.get(0) && centerX <= xRepRange.get(1))) {
+                    Log.d(TAG, " isWrongRep: " + isWrongRep);
+                    updateReps(2000);
                 }
             }
         }
@@ -446,7 +483,19 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
                 yRange = tempYRange;
 
-                Log.d(TAG, "yRange: " + yRange.toString());
+                tempXRange = new ArrayList<Integer>();
+                tempYRange = new ArrayList<Integer>(); 
+
+                tempXRange.add(centerX - 10);
+                tempXRange.add(centerX + 10);
+
+                tempYRange.add(centerY - 10);
+                tempYRange.add(centerY + 10);
+
+                xRepRange = tempXRange;
+                yRepRange = tempYRange;
+
+                isWrongRep = false;
 
                 return false;
             }
@@ -464,8 +513,10 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 Log.d(TAG, "centerX: " + centerX);
                 Log.d(TAG, "centerY: " + centerY);
 
-
-                if(xRange != null && (centerX >= xRange.get(0) && centerX <= xRange.get(1))) {
+                if(isWrongRep == null) {
+                    Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0, 0, 255), 4);
+                }
+                else if(xRange != null && (centerX >= xRange.get(0) && centerX <= xRange.get(1))) {
                     if(yRange != null && (centerY >= yRange.get(0) && centerY <= yRange.get(1))) {
                         Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(0,255,0), 4);
                     }
@@ -475,6 +526,11 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
                 else {
                     Imgproc.rectangle(inputFrame, rect.tl(), rect.br(), new Scalar(255,0,0), 4);
+                    isWrongRep = true;
+                }
+
+                if(xRepRange != null && (centerX >= xRepRange.get(0) && centerX <= xRepRange.get(1))) {
+                    updateReps(2000);
                 }
             }
         }
@@ -482,55 +538,32 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         return inputFrame; 
     }
 
-    /*private String getDirection() {
-        int posCount = 0;
-        int negCount = 0;
+    public void updateReps(long timeout) {
+        if(t1 == 0|| t1 >= t2) {
+            t1 = System.currentTimeMillis();
+            t2 = t1 + timeout;
+            if(yRepRange != null && (centerY >=  yRepRange.get(0) && centerY <= yRepRange.get(1)) && !isWrongRep) {
+                correctReps += 1;
+                Log.d(TAG, "Correct num: " + correctReps);
+                //correctRepNum.setText("correct");
 
-        for(int i = 1; i < xTrackerList.size(); i++) {
-            if(xTrackerList.get(i) - xTrackerList.get(i-1) > 0) {
-                posCount += 1;
+                totalReps += 1;
+                Log.d(TAG, "Total num: " + totalReps);
+                //totalRepNum.setText("correct");
             }
             else {
-                negCount += 1;
-            }
-
-            if(posCount > negCount) {
-                isLeft = true;
-                direction = "left";
-
-            }
-            else {
-                isLeft = false;
-                direction = "right";
+                totalReps += 1;
+                //totalRepNum.setText("wrong");
+                Log.d(TAG, "Total num: " + totalReps);
+                isWrongRep = false;
+                long x = System.currentTimeMillis();
             }
         }
-
-        return direction;
+        else {
+            t1 = System.currentTimeMillis();
+        }
+        Log.d(TAG, "Time: " + t1 + " " + t2);
     }
-
-    private void checkForReps() {
-        if(!isWrongRep) {
-            if(isLeft && getDirection().equals("left")) {
-                int num = Integer.parseInt(correctRepNum.getText().toString());
-                num++;
-                correctRepNum.setText(Integer.toString(num));
-
-                num = Integer.parseInt(totalRepNum.getText().toString());
-                num++;
-                totalRepNum.setText(Integer.toString(num));
-            }
-            else if(!isLeft && getDirection().equals("right")){
-                int num = Integer.parseInt(correctRepNum.getText().toString());
-                num++;
-                correctRepNum.setText(Integer.toString(num));
-
-                num = Integer.parseInt(totalRepNum.getText().toString());
-                num++;
-                totalRepNum.setText(Integer.toString(num));
-            }
-            isWrongRep = false;
-        }
-    }*/
 
 
 

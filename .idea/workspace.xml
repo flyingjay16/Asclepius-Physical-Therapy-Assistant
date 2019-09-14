@@ -6,310 +6,44 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="system.ou" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Correct" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f08fb9b2-84b9-4bd5-b524-9205b03811f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_17_1_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_impl_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_6_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_17_0_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_19_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_auth_interop_18_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_19_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_19_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_database_collection_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_19_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_17_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_18_0_0_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RepLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RetrieveData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_alpha02_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_alpha02_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_1_1_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_solver_1_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_alpha01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_alpha01_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_alpha02_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_alpha02_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_0_0_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_alpha02_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_preference_preference_1_1_0_alpha02_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_2_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_alpha01_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_0_alpha01_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_17_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_florescu_android_rangeseekbar_rangeseekbar_library_0_3_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_florescu_android_rangeseekbar_rangeseekbar_library_0_3_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Physical-Therapy-Assistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Physical-Therapy-Assistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PhysicalTherapyAssistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PhysicalTherapyAssistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/physicaltherapyassistant/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/physicaltherapyassistant/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Accelerometer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Accelerometer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CalibrateCameraActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CalibrateCameraActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Gyroscope.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Gyroscope.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Lift.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Lift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/SettingsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TrackerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TrackerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TrackerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TrackerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TutorialFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TutorialFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_accessibility_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_accessibility_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_gallery.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_gallery.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_manage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_manage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_send.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_send.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_share.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_share.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_slideshow.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_slideshow.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_video_library_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_video_library_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_videocam_black_24dp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_videocam_black_24dp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calibrate_camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calibrate_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_lift.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_lift.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tracker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tracker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/camera.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/camera_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/camera_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tracker_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tracker_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tutorial_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tutorial_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main2_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main2_drawer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/camera_calibrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/camera_calibrator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/root_preferences.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/root_preferences.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/physicaltherapyassistant/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/physicaltherapyassistant/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import-summary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/import-summary.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/org/opencv/engine/OpenCVEngineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/generated/aidl_source_output_dir/debug/compileDebugAidl/out/org/opencv/engine/OpenCVEngineInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/generated/source/buildConfig/androidTest/debug/org/opencv/test/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/generated/source/buildConfig/androidTest/debug/org/opencv/test/BuildConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/library_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/library_manifest/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/merged_manifests/debug/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/merged_manifests/debug/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/runtime_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/packaged_res/debug/values/values.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/intermediates/packaged_res/debug/values/values.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openCVLibrary343/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/lint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/lint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/openCVLibrary343.iml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/openCVLibrary343.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/AsyncServiceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/AsyncServiceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/BaseLoaderCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/BaseLoaderCallback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/Camera2Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/Camera2Renderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraBridgeViewBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraBridgeViewBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraGLRendererBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraGLRendererBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraGLSurfaceView.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraGLSurfaceView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/CameraRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/FpsMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/FpsMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/InstallCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/InstallCallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/JavaCamera2View.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/JavaCamera2View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/JavaCameraView.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/JavaCameraView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/LoaderCallbackInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/LoaderCallbackInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/OpenCVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/OpenCVLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/StaticHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/StaticHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/android/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/Calib3d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/Calib3d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoSGBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/calib3d/StereoSGBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Algorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Core.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/CvException.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/CvException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/CvType.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/CvType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/DMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/DMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/KeyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/KeyPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Mat.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Mat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfByte.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfByte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfDMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfDMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat4.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat6.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfFloat6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfInt4.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfInt4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfKeyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfKeyPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint2f.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint2f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint3.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint3f.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfPoint3f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRect2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRect2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRotatedRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/MatOfRotatedRect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Point3.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Point3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Rect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Rect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Rect2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Rect2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/RotatedRect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/RotatedRect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Scalar.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Scalar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/TermCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/TermCriteria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/TickMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/core/TickMeter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/DictValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/DictValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Dnn.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Dnn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Layer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Net.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/dnn/Net.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/AKAZE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/AKAZE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/AgastFeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/AgastFeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BFMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BFMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWImgDescriptorExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWImgDescriptorExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWKMeansTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWKMeansTrainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWTrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BOWTrainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BRISK.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/BRISK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/DescriptorExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/DescriptorExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/DescriptorMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/DescriptorMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FastFeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FastFeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Feature2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Feature2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FeatureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FeatureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Features2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Features2d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FlannBasedMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/FlannBasedMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/GFTTDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/GFTTDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/KAZE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/KAZE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/MSER.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/MSER.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/ORB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/ORB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Params.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/features2d/Params.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgcodecs/Imgcodecs.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgcodecs/Imgcodecs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/CLAHE.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/CLAHE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Imgproc.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Imgproc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/LineSegmentDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/LineSegmentDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Moments.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Moments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Subdiv2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/imgproc/Subdiv2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ANN_MLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ANN_MLP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ANN_MLP_ANNEAL.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ANN_MLP_ANNEAL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/Boost.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/Boost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/DTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/DTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/EM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/EM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/KNearest.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/KNearest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/LogisticRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/LogisticRegression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/Ml.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/Ml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/NormalBayesClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/NormalBayesClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ParamGrid.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/ParamGrid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/RTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/RTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/SVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/SVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/SVMSGD.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/SVMSGD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/StatModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/StatModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/TrainData.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/ml/TrainData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/BaseCascadeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/BaseCascadeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/CascadeClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/CascadeClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/HOGDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/HOGDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/Objdetect.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/objdetect/Objdetect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/osgi/OpenCVInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/osgi/OpenCVInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/osgi/OpenCVNativeLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/osgi/OpenCVNativeLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/AlignExposures.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/AlignExposures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/AlignMTB.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/AlignMTB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateCRF.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateCRF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateDebevec.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateDebevec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateRobertson.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/CalibrateRobertson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeDebevec.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeDebevec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeExposures.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeExposures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeMertens.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeMertens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeRobertson.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/MergeRobertson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/Photo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/Tonemap.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/Tonemap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapDrago.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapDrago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapDurand.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapDurand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapMantiuk.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapMantiuk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapReinhard.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/photo/TonemapReinhard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/utils/Converters.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/utils/Converters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractorKNN.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractorKNN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractorMOG2.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/BackgroundSubtractorMOG2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/DenseOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/DenseOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/DualTVL1OpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/DualTVL1OpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/FarnebackOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/FarnebackOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/KalmanFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/KalmanFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/SparseOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/SparseOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/SparsePyrLKOpticalFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/SparsePyrLKOpticalFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/video/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/VideoCapture.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/VideoCapture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/VideoWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/VideoWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/Videoio.java" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/java/org/opencv/videoio/Videoio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openCVLibrary343/src/main/res/values/attrs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/openCVLibrary343/src/main/res/values/attrs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +54,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="ZY224NNZQH" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -330,55 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="31" column="88" lean-forward="true" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1192#2157#0" expanded="true" />
-                <element signature="e#2156#2157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RepLog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#897#898#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#1142#1143#0" expanded="true" />
-                <element signature="e#1196#1197#0" expanded="true" />
-                <element signature="e#1232#1233#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1320#1321#0" expanded="true" />
-                <element signature="e#1368#1369#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1434#1435#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -386,34 +76,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+            <state relative-caret-position="350">
+              <caret line="427" column="32" selection-start-line="427" selection-start-column="32" selection-end-line="427" selection-end-column="32" />
               <folding>
-                <element signature="e#5063#5064#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#9385#9397#0" expanded="true" />
+                <element signature="e#9579#10396#0" expanded="true" />
+                <element signature="e#9764#9773#0" expanded="true" />
+                <element signature="e#9838#9847#0" expanded="true" />
+                <element signature="e#10395#10396#0" expanded="true" />
+                <element signature="e#12075#12087#0" expanded="true" />
+                <element signature="e#12269#13270#0" expanded="true" />
+                <element signature="e#12454#12463#0" expanded="true" />
+                <element signature="e#12659#12668#0" expanded="true" />
+                <element signature="e#13269#13270#0" expanded="true" />
+                <element signature="e#15171#15183#0" expanded="true" />
+                <element signature="e#15527#16530#0" expanded="true" />
+                <element signature="e#15550#15559#0" expanded="true" />
+                <element signature="e#15755#15764#0" expanded="true" />
+                <element signature="e#16529#16530#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera.xml">
           <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_fragment.xml">
-          <provider editor-type-id="android-designer2" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+            <state relative-caret-position="222">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -440,11 +135,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/local.properties" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/TutorialFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tutorial_fragment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/camera.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RetrieveLog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RetrieveData.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
@@ -456,13 +149,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/camera.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="756" />
-    <option name="y" value="27" />
-    <option name="width" value="978" />
+    <option name="x" value="755" />
+    <option name="y" value="26" />
+    <option name="width" value="979" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -470,51 +165,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="physicaltherapyassistant" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="Physical-Therapy-Assistant" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -624,11 +278,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15964523" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.1590604" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -636,14 +289,15 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49944568" weight="0.32497275" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.4966443" visible="true" weight="0.32402235" />
+      <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.49932885" weight="0.32960895" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32960895" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5022173" side_tool="true" visible="true" weight="0.27589968" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4977827" visible="true" weight="0.27589968" />
-      <window_info anchor="bottom" id="Android Profiler" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49944568" weight="0.35441658" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50067115" side_tool="true" weight="0.32402235" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4966443" weight="0.27513966" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49463087" weight="0.35335195" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="8" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -651,7 +305,7 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Assistant" order="5" weight="0.3292683" />
-      <window_info anchor="right" id="Preview" order="6" weight="0.41740575" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.41677853" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -723,16 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/openCVLibrary343/build.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -764,14 +408,6 @@
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -810,28 +446,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/RepLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1320#1321#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="114" column="25" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
+          <folding>
+            <element signature="e#4935#4936#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -839,47 +485,50 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_fragment.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="222">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/CameraFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="114" column="25" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="25" />
-          <folding>
-            <element signature="e#5063#5064#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="31" column="88" lean-forward="true" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
+        <state relative-caret-position="153">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1192#2157#0" expanded="true" />
-            <element signature="e#2156#2157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/physicaltherapyassistant/Camera.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="427" column="32" selection-start-line="427" selection-start-column="32" selection-end-line="427" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9385#9397#0" expanded="true" />
+            <element signature="e#9579#10396#0" expanded="true" />
+            <element signature="e#9764#9773#0" expanded="true" />
+            <element signature="e#9838#9847#0" expanded="true" />
+            <element signature="e#10395#10396#0" expanded="true" />
+            <element signature="e#12075#12087#0" expanded="true" />
+            <element signature="e#12269#13270#0" expanded="true" />
+            <element signature="e#12454#12463#0" expanded="true" />
+            <element signature="e#12659#12668#0" expanded="true" />
+            <element signature="e#13269#13270#0" expanded="true" />
+            <element signature="e#15171#15183#0" expanded="true" />
+            <element signature="e#15527#16530#0" expanded="true" />
+            <element signature="e#15550#15559#0" expanded="true" />
+            <element signature="e#15755#15764#0" expanded="true" />
+            <element signature="e#16529#16530#0" expanded="true" />
           </folding>
         </state>
       </provider>
