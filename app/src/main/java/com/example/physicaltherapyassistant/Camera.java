@@ -284,6 +284,17 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
             }
         }
 
+
+        //why did i need to do this again???
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                correctRepNum.setText(Integer.toString(correctReps));
+                totalRepNum.setText(Integer.toString(totalReps));
+            }
+        });
+
+
         return inputFrame;
     }
 
@@ -359,6 +370,8 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
             }
         }
+
+
 
         return inputFrame;
     }
@@ -545,15 +558,15 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
             if(yRepRange != null && (centerY >=  yRepRange.get(0) && centerY <= yRepRange.get(1)) && !isWrongRep) {
                 correctReps += 1;
                 Log.d(TAG, "Correct num: " + correctReps);
-                //correctRepNum.setText("correct");
+                //correctRepNum.setText(Integer.toString(correctReps));
 
                 totalReps += 1;
                 Log.d(TAG, "Total num: " + totalReps);
-                //totalRepNum.setText("correct");
+                //totalRepNum.setText(Integer.toString(totalReps));
             }
             else {
                 totalReps += 1;
-                //totalRepNum.setText("wrong");
+                //totalRepNum.setText(Integer.toString(totalReps));
                 Log.d(TAG, "Total num: " + totalReps);
                 isWrongRep = false;
                 long x = System.currentTimeMillis();
@@ -562,7 +575,6 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         else {
             t1 = System.currentTimeMillis();
         }
-        Log.d(TAG, "Time: " + t1 + " " + t2);
     }
 
 

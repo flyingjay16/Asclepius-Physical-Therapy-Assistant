@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Physical Therapy Assistant</string>
+    <string name="app_name">Asclepius</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Preference Titles -->
