@@ -58,10 +58,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     public static ArrayList<Integer> xRepRange;
     public static ArrayList<Integer> yRepRange;
 
-    private boolean isLeft;
-    private int markerX;
     private Boolean isWrongRep;
-    private String direction;
 
     private TextView correctRepText;
     private TextView totalRepText;
@@ -286,6 +283,7 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
 
         //why did i need to do this again???
+        //https://stackoverflow.com/questions/5161951/android-only-the-original-thread-that-created-a-view-hierarchy-can-touch-its-vi
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -370,6 +368,14 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
             }
         }
+
+        runOnUiThread(new Runnable(){
+            @Override
+            public void run() {
+                correctRepNum.setText(Integer.toString(correctReps));
+                totalRepNum.setText(Integer.toString(totalReps));
+            }
+        });
 
 
 
@@ -461,6 +467,14 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
             }
         }
 
+        runOnUiThread(new Runnable(){
+            @Override
+            public void run() {
+                correctRepNum.setText(Integer.toString(correctReps));
+                totalRepNum.setText(Integer.toString(totalReps));
+            }
+        });
+
         return inputFrame;
     }
 
@@ -547,6 +561,14 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
                 }
             }
         }
+
+        runOnUiThread(new Runnable(){
+            @Override
+            public void run() {
+                correctRepNum.setText(Integer.toString(correctReps));
+                totalRepNum.setText(Integer.toString(totalReps));
+            }
+        });
 
         return inputFrame; 
     }
