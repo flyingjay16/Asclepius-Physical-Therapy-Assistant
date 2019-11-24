@@ -13,8 +13,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    BottomNavigationView bottomNav;
-    HomeFragment homeFrag;
+    public static BottomNavigationView bottomNav;
+    public static HomeFragment homeFrag;
+    public static CameraFragment cameraFrag;
+    public static TrackerFragment trackerFrag;
+    public static TutorialFragment tutorialFrag;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -28,8 +31,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         homeFrag = new HomeFragment();
+        cameraFrag = new CameraFragment();
+        trackerFrag = new TrackerFragment();
+        tutorialFrag = new TutorialFragment();
 
         getSupportFragmentManager().beginTransaction().add(R.id.framelayout, homeFrag).commit();
+
+        /*Intent intent = getIntent();
+        Bundle bun = intent.getExtras();
+        String exercise = bun.getString("Exercise");
+
+        if(exercise.length() > 0) {
+            getSupportFragmentManager().beginTransaction().add(R.id.framelayout, cameraFrag).commit();
+        }
+        else {
+            getSupportFragmentManager().beginTransaction().add(R.id.framelayout, homeFrag).commit();
+        }*/
 
         bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -41,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
                         selectedFrag = homeFrag;
                         break;
                     case R.id.camera:
-                        selectedFrag = new CameraFragment();
+                        selectedFrag = cameraFrag;
                         break;
                     case R.id.accel:
-                        selectedFrag = new TrackerFragment();
+                        selectedFrag = trackerFrag;
                         break;
                     case R.id.tutorials:
-                        selectedFrag = new TutorialFragment();
+                        selectedFrag = tutorialFrag;
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, selectedFrag).commit();

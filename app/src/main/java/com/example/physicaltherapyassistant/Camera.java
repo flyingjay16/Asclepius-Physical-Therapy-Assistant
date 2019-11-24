@@ -29,7 +29,7 @@ import java.util.List;
 
 public class Camera extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2{
 
-    public String algorythm;
+    public static String algorythm = "";
 
     private static final String TAG = "Camera";
 
@@ -64,8 +64,8 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
     private TextView totalRepText;
     private TextView correctRepNum;
     private TextView totalRepNum;
-    private int correctReps;
-    private int totalReps;
+    public static int correctReps;
+    public static int totalReps;
 
     private long t1;
     private long t2;
@@ -166,6 +166,20 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
         if(tracker != null) {
             tracker.disableView();
         }
+
+        Bundle bundle = new Bundle();
+        bundle.putString("Exercise", algorythm);
+        bundle.putInt("CorrectRep", correctReps);
+        bundle.putInt("TotalRep", totalReps);
+
+        /*CameraFragment cameraFrag = new CameraFragment();
+        cameraFrag.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout, cameraFrag).commit();*/
+
+        MainActivity.cameraFrag.setArguments(bundle);
+
+        Log.d(TAG, "Bundle: " + bundle.toString());
     }
 
     @Override
@@ -598,7 +612,6 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
             t1 = System.currentTimeMillis();
         }
     }
-
 
 
 }

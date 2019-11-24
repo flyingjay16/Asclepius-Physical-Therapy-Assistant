@@ -49,7 +49,36 @@ public class CameraFragment extends Fragment {
 
     Button test;
     String date = java.time.LocalDate.now().toString();
-    RepLog log = new RepLog(0, 0, 0, 0);
+    RepLog log = new RepLog(0, 0, 0, 0, 0, 0, 0, 0);
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        if(Camera.algorythm.equals("face_pull")) {
+            log.setFacePullCReps(Camera.correctReps);
+            log.setFacePullTReps(Camera.totalReps);
+            Log.d(TAG, log.toString());
+        }
+        else if(Camera.algorythm.equals("lower_traps")) {
+            log.setLowerTrapsCReps(Camera.correctReps);
+            log.setLowerTrapsTReps(Camera.totalReps);
+            Log.d(TAG, log.toString());
+        }
+        else if(Camera.algorythm.equals("rotator_cuffs")){
+            log.setRotatorCuffCReps(Camera.correctReps);
+            log.setRotatorCuffTReps(Camera.totalReps);
+            Log.d(TAG, log.toString());
+        }
+        else if(Camera.algorythm.equals("swimmers")) {
+            log.setSwimmersCReps(Camera.correctReps);
+            log.setSwimmersTReps(Camera.totalReps);
+            Log.d(TAG, log.toString());
+        }
+        else {
+            Log.d(TAG, "Error in retrieving data from Camera");
+        }
+    }
 
     @Nullable
     @Override
@@ -129,6 +158,8 @@ public class CameraFragment extends Fragment {
                     });
                 }
             });
+
+
 
             return view;
     }
