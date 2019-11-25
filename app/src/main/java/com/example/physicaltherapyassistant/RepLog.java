@@ -13,6 +13,29 @@ public class RepLog {
     private int rotatorCuffTReps;
     private int swimmersCReps;
     private int swimmersTReps;
+
+    private int percentFacePullReps;
+
+    public int getPercentFacePullReps() {
+        return percentFacePullReps;
+    }
+
+    public int getPercentLowerTrapsReps() {
+        return percentLowerTrapsReps;
+    }
+
+    public int getPercentRotatorCuffReps() {
+        return percentRotatorCuffReps;
+    }
+
+    public int getPercentSwimmersReps() {
+        return percentSwimmersReps;
+    }
+
+    private int percentLowerTrapsReps;
+    private int percentRotatorCuffReps;
+    private int percentSwimmersReps;
+
     private String timeDate;
 
     private ArrayList<Integer> facePullReps;
@@ -20,9 +43,15 @@ public class RepLog {
     private ArrayList<Integer> rotatorCuffReps;
     private ArrayList<Integer> swimmersReps;
 
+    //private static
+
+    public RepLog() {
+
+    }
+
 
     public RepLog(int facePullCReps, int lowerTrapsCReps, int rotatorCuffCReps, int swimmersCReps, int facePullTReps, int lowerTrapsTReps, int rotatorCuffTReps, int swimmersTReps) {
-        timeDate = new SimpleDateFormat("MM dd yy HH:mm:ss").format(new Date());
+        timeDate = new SimpleDateFormat("MMM dd, yyyy | HH:mm").format(new Date());
 
         this.facePullCReps = facePullCReps;
         this.lowerTrapsCReps = lowerTrapsCReps;
@@ -36,7 +65,7 @@ public class RepLog {
     }
 
     public RepLog(ArrayList<Integer> facePullReps, ArrayList<Integer> lowerTrapReps, ArrayList<Integer> rotatorCuffReps, ArrayList<Integer> swimmersReps) {
-        timeDate = new SimpleDateFormat("MM dd yy HH:mm:ss").format(new Date());
+        timeDate = new SimpleDateFormat("MMM dd, yyyy | HH:mm").format(new Date());
 
         this.facePullReps = facePullReps;
         facePullCReps = facePullReps.get(0);
@@ -53,6 +82,13 @@ public class RepLog {
         this.swimmersReps = swimmersReps;
         swimmersCReps = swimmersReps.get(0);
         swimmersTReps = swimmersReps.get(1);
+    }
+
+    public void convertPercentages() {
+        this.percentFacePullReps = (int)(((double)this.facePullCReps / (double)this.facePullTReps)*100);
+        this.percentLowerTrapsReps = (int)(((double)this.lowerTrapsCReps / (double)this.lowerTrapsTReps)*100);
+        this.percentRotatorCuffReps = (int)(((double)this.rotatorCuffCReps / (double)this.rotatorCuffTReps)*100);
+        this.percentSwimmersReps = (int)(((double)this.swimmersCReps / (double)this.swimmersTReps)*100);
     }
 
     public int getFacePullCReps() {
