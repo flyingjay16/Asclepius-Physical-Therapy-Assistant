@@ -169,8 +169,8 @@ public class Camera extends AppCompatActivity implements CameraBridgeViewBase.Cv
 
         Bundle bundle = new Bundle();
         bundle.putString("Exercise", algorythm);
-        bundle.putInt("CorrectRep", correctReps);
-        bundle.putInt("TotalRep", totalReps);
+        bundle.putInt("Correct_Reps", correctReps);
+        bundle.putInt("Total_Reps", totalReps);
 
         /*CameraFragment cameraFrag = new CameraFragment();
         cameraFrag.setArguments(bundle);

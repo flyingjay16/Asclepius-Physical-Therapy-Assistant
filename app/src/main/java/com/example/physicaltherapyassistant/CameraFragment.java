@@ -52,31 +52,38 @@ public class CameraFragment extends Fragment {
     RepLog log = new RepLog(0, 0, 0, 0, 0, 0, 0, 0);
 
     @Override
-    public void onStart() {
-        super.onStart();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-        if(Camera.algorythm.equals("face_pull")) {
-            log.setFacePullCReps(Camera.correctReps);
-            log.setFacePullTReps(Camera.totalReps);
-            Log.d(TAG, log.toString());
-        }
-        else if(Camera.algorythm.equals("lower_traps")) {
-            log.setLowerTrapsCReps(Camera.correctReps);
-            log.setLowerTrapsTReps(Camera.totalReps);
-            Log.d(TAG, log.toString());
-        }
-        else if(Camera.algorythm.equals("rotator_cuffs")){
-            log.setRotatorCuffCReps(Camera.correctReps);
-            log.setRotatorCuffTReps(Camera.totalReps);
-            Log.d(TAG, log.toString());
-        }
-        else if(Camera.algorythm.equals("swimmers")) {
-            log.setSwimmersCReps(Camera.correctReps);
-            log.setSwimmersTReps(Camera.totalReps);
+        Bundle bundle = getArguments();
+        if(bundle != null) {
+            Log.d(TAG, "Bundle is good. Bundle: " + bundle.toString());
+
+            if(bundle.getString("Exercise").equals("face_pull")) {
+                log.setFacePullCReps(bundle.getInt("Correct_Reps"));
+                log.setFacePullTReps(bundle.getInt("Total_Reps"));
+                Log.d(TAG, log.toString());
+            }
+            else if(bundle.getString("Exercise").equals("lower_traps")) {
+                log.setLowerTrapsCReps(bundle.getInt("Correct_Reps"));
+                log.setLowerTrapsTReps(bundle.getInt("Total_Reps"));
+                Log.d(TAG, log.toString());
+            }
+            else if(bundle.getString("Exercise").equals("rotator_cuffs")){
+                log.setRotatorCuffCReps(bundle.getInt("Correct_Reps"));
+                log.setRotatorCuffTReps(bundle.getInt("Total_Reps"));
+                Log.d(TAG, log.toString());
+            }
+            else if(bundle.getString("Exercise").equals("swimmers")) {
+                log.setSwimmersCReps(bundle.getInt("Correct_Reps"));
+                log.setSwimmersTReps(bundle.getInt("Total_Reps"));
+                Log.d(TAG, log.toString());
+            }
+
             Log.d(TAG, log.toString());
         }
         else {
-            Log.d(TAG, "Error in retrieving data from Camera");
+            Log.d(TAG, "Error retrieving data from Camera.");
         }
     }
 
