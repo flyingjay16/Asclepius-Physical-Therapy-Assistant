@@ -36,8 +36,13 @@ public class HomeFragment extends Fragment {
         myRef.keepSynced(true);
 
         homeRecyclerView = view.findViewById(R.id.homerecyclerview);
-        homeRecyclerView.setHasFixedSize(true);
-        homeRecyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+        homeRecyclerView.setHasFixedSize(false);
+        homeRecyclerView.setNestedScrollingEnabled(true);
+
+        LinearLayoutManager manager= new LinearLayoutManager(this.getContext());
+        manager.setReverseLayout(true);
+        manager.setStackFromEnd(true);
+        homeRecyclerView.setLayoutManager(manager);
 
         return view;
     }

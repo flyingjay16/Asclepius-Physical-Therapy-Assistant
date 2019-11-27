@@ -24,7 +24,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/cam_lower_traps"
         app:layout_constraintTop_toBottomOf="@id/summary_heading"
-        android:layout_marginTop = "30dp" />
+        android:layout_marginTop = "30dp"
+        android:background="@drawable/"/>
 
     <Button
         android:id="@+id/cam_lower_traps"
