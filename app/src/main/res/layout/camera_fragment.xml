@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f98e1d">
 
     <TextView
     android:layout_width="wrap_content"
@@ -13,7 +14,8 @@
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
-    android:layout_marginTop = "20dp" />
+    android:layout_marginTop = "20dp"
+    android:textColor = "#ffffff"/>
 
 
     <Button
@@ -25,7 +27,8 @@
         app:layout_constraintRight_toLeftOf="@id/cam_lower_traps"
         app:layout_constraintTop_toBottomOf="@id/summary_heading"
         android:layout_marginTop = "30dp"
-        android:background="@drawable/"/>
+        android:textColor="#ffffff"
+        android:background="@drawable/curved_button"/>
 
     <Button
         android:id="@+id/cam_lower_traps"
@@ -36,7 +39,9 @@
         app:layout_constraintTop_toBottomOf="@id/summary_heading"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginStart= "20dp"
-        android:layout_marginTop = "30dp"/>
+        android:layout_marginTop = "30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/curved_button"/>
 
     <Button
         android:id="@+id/cam_rotator_cuff"
@@ -47,7 +52,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/cam_swimmers"
         android:layout_marginTop = "30dp"
-        />
+        android:textColor="#ffffff"
+        android:background="@drawable/curved_button"/>
 
     <Button
         android:id="@+id/cam_swimmers"
@@ -59,7 +65,8 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop = "30dp"
         android:layout_marginStart = "20dp"
-        />
+        android:textColor="#ffffff"
+        android:background="@drawable/curved_button"/>
 
     <Button
         android:id="@+id/submitReps"
@@ -69,6 +76,8 @@
         android:layout_marginTop = "320dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Submit Reps" />
+        android:text="Submit Reps"
+        android:textColor="#ffffff"
+        android:background="@drawable/curved_button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
